@@ -1,0 +1,32 @@
+# --- Julia ---
+Manifest.toml
+/docs/build/
+/docs/site/
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+.CondaPkg/
+
+# --- Data (don't commit raw LiDAR logs or generated outputs) ---
+data/raw/*
+data/ground_truth/*
+!data/raw/.gitkeep
+!data/ground_truth/.gitkeep
+*.bin
+*.pcd
+*.npy
+*.npz
+
+# --- Generated outputs ---
+*.png
+*.jpg
+*.jld2
+output/
+outputs/
+
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
